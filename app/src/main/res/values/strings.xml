@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Shop</string>
+    <string name="mainUpperButton">Sth will be here maybe</string>
+    <string name="cashSimulatorButton">Cash Simulator</string>
+    <string name="scanningButton">Scanner</string>
+    <string name="shopViewButton">Shop View</string>
+    <string name="mainText">A lot of welcoming text\n1\n2\n3\n4\n5\n6\n7\n8\n9\n…</string>
+    <string name="productName">Product Name:</string>
+    <string name="productNameHint">Here goes name of this product</string>
+    <string name="quantity">Quantity:</string>
+    <string name="addProduct">Add Product to the Store</string>
+    <string name="goBack">Go Back</string>
+    <string name="scanProduct">Scan Product</string>
+    <string name="removeProduct">Remove Product from the Store</string>
+
 </resources>
