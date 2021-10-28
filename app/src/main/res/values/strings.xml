@@ -12,5 +12,7 @@
     <string name="goBack">Go Back</string>
     <string name="scanProduct">Scan Product</string>
     <string name="removeProduct">Remove Product from the Store</string>
+    <string name="appName">PZ Shop</string>
+    <string name="creators">GaBudziński, PaCegieła, MiSadłek, WoSęk, FrStepek</string>
 
 </resources>
