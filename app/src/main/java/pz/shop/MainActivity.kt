@@ -50,6 +50,10 @@ class MainActivity : AppCompatActivity() {
         actionClicked("Dummy Clicked\n")
     }
 
+    fun clickDebug(view: View){
+        startForResult.launch(Intent(this, RegisterActivity::class.java))
+    }
+
     private fun actionClicked(name: String) {
         val mainText = findViewById<View>(R.id.textView) as TextView
         welcomeText += name
