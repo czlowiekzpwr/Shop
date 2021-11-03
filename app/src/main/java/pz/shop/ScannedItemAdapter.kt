@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
@@ -24,6 +25,8 @@ class ScannedItemAdapter() : ListAdapter<Item, ScannedItemAdapter.ItemViewHolder
         private val itemNameView: TextView = itemView.findViewById(R.id.itemName)
         private val itemPriceView: TextView = itemView.findViewById(R.id.itemPrice)
         private val itemQtyView: EditText = itemView.findViewById(R.id.itemQty)
+        private val itemQtyIncrease: ImageButton = itemView.findViewById(R.id.itemQtyIncreaseButton)
+        private val itemQtyDecrease: ImageButton = itemView.findViewById(R.id.itemQtyDecreaseBtn)
         private var currentItem: Item? = null
 
         init {
@@ -41,6 +44,11 @@ class ScannedItemAdapter() : ListAdapter<Item, ScannedItemAdapter.ItemViewHolder
         fun bind(bound: Item){
             currentItem = bound
             itemNameView.text = bound.name
+            itemQtyView.setText(bound.scannedQty.toString())
+            itemQtyIncrease.setOnClickListener { bound.scannedQty += 1
+                itemQtyView.setText(bound.scannedQty.toString())}
+            itemQtyDecrease.setOnClickListener { bound.scannedQty -= 1
+                itemQtyView.setText(bound.scannedQty.toString())}
         }
 
 

@@ -37,7 +37,7 @@
         app:layout_constraintStart_toEndOf="@+id/itemIcon" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/itemQtyIncreaseButton"
         android:layout_width="48dp"
         android:layout_height="0dp"
         android:background="#00FFFFFF"
@@ -48,18 +48,18 @@
 
     <EditText
         android:id="@+id/itemQty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
         android:ems="2"
         android:inputType="number"
         android:text="1"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+        app:layout_constraintBottom_toBottomOf="@+id/itemQtyIncreaseButton"
+        app:layout_constraintEnd_toStartOf="@+id/itemQtyIncreaseButton"
+        app:layout_constraintTop_toTopOf="@+id/itemQtyIncreaseButton" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/itemQtyDecreaseBtn"
         android:layout_width="48dp"
         android:layout_height="0dp"
         android:background="#00FFFFFF"

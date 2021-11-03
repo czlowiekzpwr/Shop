@@ -8,7 +8,7 @@ import android.os.Looper
 
 class SplashActivity : AppCompatActivity() {
     //loading time of the splash screen
-    private val splashTimeOut:Long = 3000 // 1 sec
+    private val splashTimeOut:Long = 300 // 0.1 sec
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
